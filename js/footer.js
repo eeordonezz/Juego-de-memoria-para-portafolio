@@ -5,7 +5,7 @@ footer_vinculo.innerHTML = `
 <div class="footer_contenedor1">
 <a href="" class="titulo_footer">Contacto</a>
 <a href="https://github.com/eeordonezz"  class="footer_sub">GitHub</a>
-<a href=""  class="footer_sub">GitHub juego de memoria</a>
+<a href="https://github.com/eeordonezz/Juego-de-memoria-para-portafolio"  class="footer_sub">GitHub juego de memoria</a>
 
 </div>
 <div class="footer_contenedor1">
