@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    
+    font-size: 10px;
+    font-family: monospace;
+}
+
+#root {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 6rem 8rem repeat(5,9rem);
+    gap: 2rem;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+/* css telefono */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 8px; /* Reducimos el tamaño de la fuente */
+    }
+
+    #root {
+        grid-template-columns: repeat(2, 1fr); /* Menos columnas para una estructura más estrecha */
+        grid-template-rows: 4rem 5rem repeat(5, rem); /* Filas más pequeñas */
+        gap: 1rem; /* Menos espacio entre los elementos */
+    }
+}

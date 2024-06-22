@@ -1,0 +1,89 @@
+#header {
+
+    background-color: rgba(12, 117, 11, 0.367);
+    grid-column: 1/9;
+
+    padding: 0px 5rem;
+
+    display: grid;
+    grid-template-columns:  10% 25% 30% 30%;
+    align-items: center;
+    gap: 2rem;
+
+    font-size: 2.5rem;
+}
+.nivel {
+    
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.nivel .num-nivel {
+
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #dad5d5;
+    color: #01080c;
+    border-radius: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vidas {
+
+    display: flex;
+    align-items: center;
+    justify-self: right;
+    gap: 1rem;
+    padding-top: 0.5rem;
+    font-size: 3rem;
+}
+.tiempo {
+
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.tiempo .ico_time {
+    padding-top: 0.2em;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    #header {
+       
+        grid-column: 1/8; /* Para ocupar toda la anchura del contenedor */
+        padding: 0 2rem; /* Reducimos el padding lateral */
+        grid-template-rows: auto; /* Las filas se adaptan al contenido */
+        font-size: 1.5rem; /* Reducimos el tamaño de la fuente */
+        gap: 1rem; /* Reducimos el espacio entre los elementos */
+        text-align: center; /* Centramos el contenido */
+    }
+
+    .nivel {
+        flex-direction: column; /* Apilamos los elementos verticalmente */
+        align-items: center; /* Centramos los elementos */
+        gap: 0.5rem; /* Reducimos el espacio entre los elementos */
+    }
+
+    .nivel .num-nivel {
+        width: 3rem;
+        height: 3rem; /* Hacemos los elementos más pequeños */
+    }
+
+    .vidas {
+        justify-self: center; /* Centramos las vidas */
+        padding-top: 0; /* Eliminamos el padding superior */
+        font-size: 2rem; /* Reducimos el tamaño de la fuente */
+    }
+
+    .tiempo {
+        justify-self: center; /* Centramos el tiempo */
+    }
+
+    .tiempo .ico_time {
+        padding-top: 0; /* Eliminamos el padding superior */
+    }
+}

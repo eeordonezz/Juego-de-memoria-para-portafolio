@@ -1,0 +1,47 @@
+.section_aciertos {
+    grid-column: 2/8;
+    grid-row: 2/3;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+.section_aciertos .titulo {
+    width: 16rem;
+    font-size: 2rem;
+    border-right: 1px solid black;
+    margin-right: 2rem;
+}
+.section_aciertos .lista {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .section_aciertos {
+        grid-column: 1/-1; /* Ocupar toda la anchura disponible */
+        grid-row: auto; /* Ajuste automático de la fila */
+        font-size: 2rem; /* Reducimos el tamaño de la fuente */
+        flex-direction: column; /* Cambiamos la disposición a columna */
+        align-items: center; /* Centramos los elementos */
+        gap: 1rem; /* Espacio reducido entre elementos */
+        padding: 1rem; /* Añadimos padding para el contenido */
+        text-align: center; /* Centramos el texto */
+    }
+
+    .section_aciertos .titulo {
+        width: auto; /* Ancho automático para que se ajuste al contenido */
+        font-size: 1.8rem; /* Reducimos el tamaño de la fuente */
+        border-right: none; /* Eliminamos el borde derecho */
+        margin-right: 0; /* Eliminamos el margen derecho */
+        margin-bottom: 1rem; /* Añadimos margen inferior para separar del contenido siguiente */
+    }
+
+    .section_aciertos .lista {
+        flex-direction: column; /* Apilamos los elementos verticalmente */
+        font-size: 1.6rem; /* Reducimos el tamaño de la fuente */
+        gap: 1rem; /* Espacio reducido entre elementos */
+    }
+}

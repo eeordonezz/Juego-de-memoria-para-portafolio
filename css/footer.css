@@ -1,0 +1,60 @@
+footer{
+    background-color: rgba(13, 117, 11, 0.471);
+    width: 98%;
+    height: 100%;
+    grid-row-start: 7;
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(1,1fr) ;
+
+    color: black;
+    padding: 0rem 10rem;
+
+}
+.footer_contenedor1{
+    display: grid;
+    font-size: 1.3rem;
+}
+.footer_contenedor1 a{
+    text-decoration: none;
+    
+    font-weight: 900;
+}
+.titulo_footer{
+    font-size: 2rem;
+    color: white;
+}
+.footer_sub{
+    color: black;
+}
+
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+  
+
+    .footer_contenedor1 {
+
+        font-size: 1.2rem; /* Reducimos ligeramente el tamaño de la fuente */
+        padding: 0.5rem 0; /* Añadimos padding superior e inferior */
+    }
+
+    .footer_contenedor1 a {
+        font-size: 1.1rem; /* Reducimos el tamaño de la fuente para los enlaces */
+        font-weight: 700; /* Reducimos el peso de la fuente para una mejor legibilidad */
+        display: block; /* Hacemos que cada enlace ocupe toda la línea */
+        margin-bottom: 0.5rem; /* Añadimos margen inferior para separar los enlaces */
+    }
+
+    .titulo_footer {
+        font-size: 1.8rem; /* Reducimos el tamaño de la fuente */
+        margin-bottom: 1rem; /* Añadimos margen inferior para separar del contenido */
+    }
+
+    .footer_sub {
+        font-size: 1.2rem; /* Reducimos el tamaño de la fuente */
+    }
+}
